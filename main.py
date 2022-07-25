@@ -280,7 +280,7 @@ def onmessage(update,bot:ObigramClient):
         #tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'Zeta30'
+        tl_admin_user = 'Michel1203'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -300,7 +300,7 @@ def onmessage(update,bot:ObigramClient):
             mensaje = "🎐No tiene acceso.\n👨🏻‍💻Contacta a : @Zeta30\n"
             intento_msg = "💢El usuario @"+username+ " está solicitando permiso para usar bot💢"
             bot.sendMessage(update.message.chat.id,mensaje)
-            bot.sendMessage(1618347551,intento_msg)
+            bot.sendMessage(878626783,intento_msg)
             return
          
         msgText = ''
@@ -711,9 +711,9 @@ def onmessage(update,bot:ObigramClient):
             start_msg+= '├❔ Como Descargar\n│\n'
             start_msg+= '├1. Envía el enlace directo.\n'
             start_msg+= '├2. Usa el TXT de descarga que se\n│genera y los abres con el XDownloader\n│\n'
-            start_msg+= '├👨🏻‍💻Activar comandos @Zeta30 \n'
-            start_msg+= '├🤖Para saber más del bot @Zeta30 \n'
-            start_msg+= '├👩🏻‍💻Para saber los comandos es @Zeta30 \n│\n'
+            start_msg+= '├👨🏻‍💻Activar comandos @Michel1203 \n'
+            start_msg+= '├🤖Para saber más del bot @Michel1203 \n'
+            start_msg+= '├👩🏻‍💻Para saber los comandos es @Michel1203 \n│\n'
             start_msg+= '╰ⓘQue disfutes del bot─〄\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -1051,9 +1051,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 17897679
-            #    api_hash = 'e7681747482f5867af9de8171136a89b'
-            #    bot_token = '5509010752:AAGBw3mY0M1QT5q1rfYxr2sQ0TT_UXNUj20'
+            #    api_id = 11405596
+            #    api_hash = '39ad6135ac9b75a47f2d1804c092c8f8'
+            #    bot_token = '5127967113:AAEjSDXy0gQUBAKwx8Zt4FBgrWQsUzRyBMY'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -1066,7 +1066,7 @@ def onmessage(update,bot:ObigramClient):
   
 
 def main():
-    bot_token = '5509010752:AAGBw3mY0M1QT5q1rfYxr2sQ0TT_UXNUj20'
+    bot_token = '5127967113:AAEjSDXy0gQUBAKwx8Zt4FBgrWQsUzRyBMY'
     
 
     bot = ObigramClient(bot_token)
