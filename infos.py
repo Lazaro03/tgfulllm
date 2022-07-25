@@ -119,31 +119,30 @@ def createFilesMsg(evfiles):
     return msg
 def createStat(username,userdata,isadmin):
     from pyobigram.utils import sizeof_fmt
-    msg = '⚙️Condiguraciones De Usuario⚙️\n\n'
-    msg+= '📱Nombre: @' + str(username)+'\n'
-    msg+= '👤User: ' + str(userdata['moodle_user'])+'\n'
-    msg+= '🔒Password: ' + str(userdata['moodle_password']) +'\n'
-    msg+= '🌐Host: ' + str(userdata['moodle_host'])+'\n'
+    msg = '➲ Condiguraciones De Usuario 웃\n\n'
+    msg+= '웃 Nombre: @' + str(username)+'\n'
+    msg+= '𓁷 User: ' + str(userdata['moodle_user'])+'\n'
+    msg+= '⌂ Password: ' + str(userdata['moodle_password'])+'\n'
+    msg+= '⊕ Host: ' + str(userdata['moodle_host'])+'\n'
     if userdata['cloudtype'] == 'moodle':
-        msg+= '🏷RepoID: ' + str(userdata['moodle_repo_id'])+'\n'
-    msg+= '🏷CloudType: ' + str(userdata['cloudtype'])+'\n'
-    msg+= '📟UpType: ' + str(userdata['uploadtype'])+'\n'
+        msg+= '⦾ RepoID: ' + str(userdata['moodle_repo_id'])+'\n'
+    msg+= '⦿ CloudType: ' + str(userdata['cloudtype'])+'\n'
+    msg+= '☉ UpType: ' + str(userdata['uploadtype'])+'\n'
     if userdata['cloudtype'] == 'cloud':
-        msg+= '📁Dir: /' + str(userdata['dir'])+'\n'
-    msg+= '📚Tamaño de Zips : ' + sizeof_fmt(userdata['zips']*1024*1024) + '\n\n'
-    msgAdmin = '❌'
+        msg+= '⎙ Dir: /' + str(userdata['dir'])+'\n'
+    msg+= '⌸ Tamaño de Zips : ' + sizeof_fmt(userdata['zips']*1024*1024) + '\n\n'
+    msgAdmin = 'No'
     if isadmin:
-        msgAdmin = '✅'
-    msg+= '🦾Admin : ' + msgAdmin + '\n'
-    proxy = '☑️'
+        msgAdmin = 'Si'
+    msg+= '卍 Admin : ' + msgAdmin + '\n'
+    proxy = 'NO'
     if userdata['proxy'] !='':
-       proxy = '✅'
-    tokenize = '❌'
+       proxy = 'SI'
+    tokenize = 'NO'
     if userdata['tokenize']!=0:
-       tokenize = '✅'
-    msg+= '🔌Proxy : ' + proxy + '\n'
-    msg+= '🔮Tokenize : ' + tokenize + '\n\n'
-    msg+= '⚙️Configurar Moodle⚙️\n✅Ejemplo /account user,password✅'
+       tokenize = 'SI'
+    msg+= '㊂ Proxy : ' + proxy + '\n'
+    msg+= '⌥ Tokenize : ' + tokenize + '\n\n'
     return msg
     if '/personalizedtext' in msgText:
             personalized_text_ = str(msgText).split(' ')[1]
